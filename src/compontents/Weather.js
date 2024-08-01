@@ -1,5 +1,5 @@
 import React from "react";
-
+import locations from "../assets/location.png";
 
 const Weather = (props) =>  {
         return (
@@ -8,7 +8,7 @@ const Weather = (props) =>  {
 
                     { props.city && 
                     <h4 className="city">
-                        <img className="loc" src="https://programmerraja.github.io/weatherapp/static/media/map-pointer.88e10ef0.png"></img>  {props.city} | {props.country} <hr></hr>
+                        <img className="loc" src={locations}></img>  {props.city} | {props.country} <hr></hr>
                     </h4>
                     } 
 
