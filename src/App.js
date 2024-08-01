@@ -3,6 +3,8 @@ import "./App.css";
 import "./fontawesome.min.css";
 import Weather from "./compontents/Weather";
 import Form from "./compontents/Form";
+import cloud from "./assets/clouds.png";
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
 
   //   Key Api--------
 const API_KEY = "50883ea96de0d5a374b6bd4583d75116";
@@ -55,7 +57,7 @@ class App extends Component {
       <div className="form-container" >
           <div className="head">
               <h2>React <span className="color">Weather</span> App</h2>
-              <img className="cloud" src="https://ayushkul.github.io/react-weather-app/icons/perfect-day.svg"></img>
+              <img className="cloud" src={cloud}></img>
               <br></br>
           </div>
 
@@ -67,7 +69,7 @@ class App extends Component {
           country= {this.state.country}
           humidity= {this.state.humidity}
           description= {this.state.description}
-          error= {this.state.error}
+          error= {this.state.serror}
           />
         
       </div> 
